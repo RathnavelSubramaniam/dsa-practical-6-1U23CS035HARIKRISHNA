@@ -66,9 +66,11 @@ public static void main(String[] args) {
             }
            }
     }
-public void insertBegin() 
-    {    
-        // TYPE YOUR CODE HERE   
+public void insertBegin(int data) {     
+    Node newNode = new Node(data);
+    newNode.next = head;
+    head = newNode;
+    System.out.println("Element Inserted");  
     } 
 public void displayList() {
         Node current = head;
